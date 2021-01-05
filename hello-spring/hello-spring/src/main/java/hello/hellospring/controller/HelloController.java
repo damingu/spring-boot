@@ -26,4 +26,26 @@ public class HelloController {
     public String helloString(@RequestParam("name") String name) {
         return "hello" + name ; //"hello spring" 내가 요청한 문자가 그대로 내려감
     }
+
+    @GetMapping("hello-api")
+    @ResponseBody
+    public Hello helloAPI(@RequestParam("name") String name) {
+        Hello hello = new Hello();
+        hello.setName(name);
+        return hello ;
+    }
+
+    static class Hello {
+        private String name ;
+
+        public String getName() {
+            return name ;
+        }
+
+        public void setName(String name) {
+            this.name = name ;
+        }
+
+    }
+
 }

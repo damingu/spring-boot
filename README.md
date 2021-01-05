@@ -1,4 +1,4 @@
-# 스프링 부트(Spring boot)
+스프링 부트(Spring boot)
 
 > ssafy 방학 끝나기 전에 일주일 동안 진득하게 들어야지 했는데 방학을 이틀 남겨 두고 부랴부랴 시작하는 게으름뱅이...ㅎ.ㅎ..
 >
@@ -32,11 +32,11 @@
 
 이처럼 요즘 개발 트렌드에서 `test`코드가 매우 중요하다는 것을 알 수 있습니다. 
 
-![image-20210104103723648](REAMDE.assets/image-20210104103723648.png)
+![image-20210104103723648](README.assets/image-20210104103723648.png)
 
 `resources`는 자바 코드를 제외한 xml, 설정파일, html등등이 다 여기에 들어가 있습니다.
 
-![image-20210104103847029](REAMDE.assets/image-20210104103847029.png)
+![image-20210104103847029](README.assets/image-20210104103847029.png)
 
 여기서 중요한 파일이 있습니다.
 
@@ -44,11 +44,11 @@
 
 옛날에는 여기에 사람이 일일이 코딩을 해주던지, 아님 잘 만들어놓은 코드를 복사해 붙여 넣었는데 `스프링부트의 출현`으로 일일이 코드를 입력하지 않아도 `htpps://start.spring.io` 이 사이트에서 내가 원하는 프로젝트를 입력하면 자동으로 파일을 만들어 넣어줍니다. 
 
-![image-20210104103929868](REAMDE.assets/image-20210104103929868.png)
+![image-20210104103929868](README.assets/image-20210104103929868.png)
 
 - `gradle` : 버전 설정, 라이브러리  떙겨 오는 프로그램 이라고 간단하게 생각하고 넘어갑시다.  🙂
 
-![image-20210104104219375](REAMDE.assets/image-20210104104219375.png)
+![image-20210104104219375](README.assets/image-20210104104219375.png)
 
 
 
@@ -58,13 +58,13 @@
 
 아무튼 실행을 하게 되면 
 
-![image-20210104120439323](REAMDE.assets/image-20210104120439323.png)
+![image-20210104120439323](README.assets/image-20210104120439323.png)
 
 http에 연결이 됐다고 잘 뜹니다. 😅
 
 여기서 `localhost:8080`이라고 인터넷 주소창에 입력하면 
 
-![image-20210104120608699](REAMDE.assets/image-20210104120608699.png)
+![image-20210104120608699](README.assets/image-20210104120608699.png)
 
 에러 페이지가 뜹니다😅
 
@@ -72,13 +72,13 @@ http에 연결이 됐다고 잘 뜹니다. 😅
 
 서버를 끄고 다시 새로고침을 하면 서버가 없다고 나오는 창이 뜹니다.
 
-![image-20210104120736507](REAMDE.assets/image-20210104120736507.png)
+![image-20210104120736507](README.assets/image-20210104120736507.png)
 
 위에까지가 프로젝트 환경 설정에 성공 했다는 뜻입니다.  
 
 돌아가는 원리를 살펴 보면 `main`메서드를 실행하면 `HelloSpringApplication`이 실행되고 톰캣이라는 엔진을 내장하고 있어 사이트가 뜨는 원리입니다.
 
-![image-20210104121043954](REAMDE.assets/image-20210104121043954.png)
+![image-20210104121043954](README.assets/image-20210104121043954.png)
 
 
 
@@ -98,13 +98,13 @@ http에 연결이 됐다고 잘 뜹니다. 😅
 
 이렇게 3개 밖에 없어 보이는데 
 
-![image-20210104121705287](REAMDE.assets/image-20210104121705287.png)
+![image-20210104121705287](README.assets/image-20210104121705287.png)
 
 실제 라이브러리는 `External Libraries`에 떙겨져 들어와 있습니다. 
 
 엄청 많은 라이브러리가 들어있습니다. 
 
-![image-20210104121924355](REAMDE.assets/image-20210104121924355.png)
+![image-20210104121924355](README.assets/image-20210104121924355.png)
 
 빌드툴들은 의존관계를 다 관리해줍니다. 
 
@@ -112,23 +112,23 @@ http에 연결이 됐다고 잘 뜹니다. 😅
 
 아래의 빨간 버튼을 눌러보면 
 
-![image-20210104134015784](REAMDE.assets/image-20210104134015784.png)
+![image-20210104134015784](README.assets/image-20210104134015784.png)
 
 `Gragdle`이 뜨는데 여기서 라이브러리들의 의존관계를 확인해 보면
 
-![image-20210104134156377](REAMDE.assets/image-20210104134156377.png)
+![image-20210104134156377](README.assets/image-20210104134156377.png)
 
 라이브러리의 디렉토리를 까보면 의존관계가 있는 다양한 라이브러리를 볼 수 있습니다. 
 
-![image-20210104135403306](REAMDE.assets/image-20210104135403306.png)
+![image-20210104135403306](README.assets/image-20210104135403306.png)
 
-![image-20210104140303424](REAMDE.assets/image-20210104140303424.png)
+![image-20210104140303424](README.assets/image-20210104140303424.png)
 
 
 
 `logging`의 경우 , 현업의 경우 log값을 이용해 심각한 에러를 따로 모아서 관리 합니다. 
 
-![image-20210104140446203](REAMDE.assets/image-20210104140446203.png)
+![image-20210104140446203](README.assets/image-20210104140446203.png)
 
 log 에 대한 궁금증이 생기면 `slf4j`와 `logback`으로 검색해 보시길 추천해 드립니다. 
 
@@ -209,7 +209,7 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-featu
 
 - 이제 동작하고 프로그래밍 되는 화면을 만들어 보도록 하겠습니다.😶
 
-![image-20210104145201658](REAMDE.assets/image-20210104145201658.png)
+![image-20210104145201658](README.assets/image-20210104145201658.png)
 
 url `localhost:8080/hello`에서 `hello`라는 값이 `helloController`에 던져지면 그 안에 정의해둔 `public String hello(Model model)`함수가 실행 되게 됩니다. 
 
@@ -238,7 +238,7 @@ public class HelloController {
 
 `return "hello"` 하는데 이 때 `"hello"`는 `resources/templates/hello.html`과 동일합니다. 
 
-![image-20210104145849740](REAMDE.assets/image-20210104145849740.png)
+![image-20210104145849740](README.assets/image-20210104145849740.png)
 
 
 
@@ -261,7 +261,7 @@ src / main / java / hello / hellospring/controller/ helloController
 - `@GetMapping("url주소")` : url 주소 
 - `attributeValue` : 넘겨줄 값 
 
-![image-20210104151511811](REAMDE.assets/image-20210104151511811.png)
+![image-20210104151511811](README.assets/image-20210104151511811.png)
 
 
 
@@ -272,7 +272,7 @@ resources / templates / {ViewName} + . html
 - 이 때 `template 라이브러리 ` 링크를 걸어주고 
 - p태그와 매핑해서 src / main / java / hello / hellospring/controller/ helloController 에서 `model의 key` 이름으로 받아 화면에 뿌려준다. 
 
-![image-20210104151201439](REAMDE.assets/image-20210104151201439.png)
+![image-20210104151201439](README.assets/image-20210104151201439.png)
 
 
 
@@ -338,21 +338,21 @@ resources / templates / {ViewName} + . html
 
 아래의 사진처럼 매우 잘 나타나 있습니다. 
 
-![image-20210104155740361](REAMDE.assets/image-20210104155740361.png)
+![image-20210104155740361](README.assets/image-20210104155740361.png)
 
 - `static`을 인식하는 폴더에 `.html`파일을 잘 만들어주고 
 
-![image-20210104160136806](REAMDE.assets/image-20210104160136806.png)
+![image-20210104160136806](README.assets/image-20210104160136806.png)
 
 - `localhost:8080/파일명.html`로 서버를 열어 확인해 보면 정적 파일이 잘 열리는 걸 확인 할 수 있습니다.
 
-![image-20210104160242221](REAMDE.assets/image-20210104160242221.png)
+![image-20210104160242221](README.assets/image-20210104160242221.png)
 
-![image-20210104160325508](REAMDE.assets/image-20210104160325508.png)
+![image-20210104160325508](README.assets/image-20210104160325508.png)
 
 
 
-![image-20210104160421301](REAMDE.assets/image-20210104160421301.png)
+![image-20210104160421301](README.assets/image-20210104160421301.png)
 
 
 
@@ -407,7 +407,7 @@ resources / template/hello-template.html
 
 url에 아무것도 입력하지 않으면 에러페이지가 뜹니다.
 
-![image-20210104173504032](REAMDE.assets/image-20210104173504032.png)
+![image-20210104173504032](README.assets/image-20210104173504032.png)
 
 왜냐하면 우리는 우리는 처리할 로직에서 `@RequestParam`로 인자를 받기로 했거든요
 
@@ -421,11 +421,11 @@ public String helloMvc(@RequestParam("name") String name, Model model){
 
 - `?mame=`인자를 받은 후 
 
-![image-20210104181534856](REAMDE.assets/image-20210104181534856.png)
+![image-20210104181534856](README.assets/image-20210104181534856.png)
 
 
 
-![image-20210104181150574](REAMDE.assets/image-20210104181150574.png)
+![image-20210104181150574](README.assets/image-20210104181150574.png)
 
 - viewResolver : 화면과 관련된 해결자가 동작 
 
@@ -450,7 +450,111 @@ public String helloString(@RequestParam("name") String name) {
 
 소스를 보면 알 수 있습니다.
 
-내가 적었던 string 값이 html없이 그대로 내려간 것을 볼 수 있습니다.
+내가 적었던 string 값이 html 태그없이 그대로 내려간 것을 볼 수 있습니다.
 
-![image-20210104182907564](REAMDE.assets/image-20210104182907564.png)
+![image-20210104182907564](README.assets/image-20210104182907564.png)
+
+template엔진에서 조작해서 내려준 mvc와는 다른게 api는 글자 그대로를 내려보내줍니다. 
+
+웹에서는 `json`형식으로 객체를 내려보내주는 것을 확인 할 수 있습니다. 
+
+![image-20210105151914218](README.assets/image-20210105151914218.png)
+
+
+
+
+
+그렇다면 `json`은 뭘까요?
+
+json은 `key`와 `value`로 구성되어있는 자료 입니다. 굉장히 간단합니다. 
+
+물론 json의 정의가 이렇게 간단한 건 아니지만 일단 이렇게 알고 넘어가보도록 합시다 😏
+
+
+
+```java
+	@GetMapping("hello-api")
+    @ResponseBody
+    public Hello helloAPI(@RequestParam("name") String name) {
+        Hello hello = new Hello();
+        hello.setName(name);
+        return hello ;
+    }
+
+    static class Hello {
+        private String name ;
+
+        public String getName() {
+            return name ;
+        }
+
+        public void setName(String name) {
+            this.name = name ;
+        }
+    }
+```
+
+- 객체를 넘겨줄 경우, 기본 default 가 json방식으로 만들어서 응답에 반환하겠다가 규칙입니다. 
+  - `ResponseBody`를 사용
+  - HTTP의 BODY에 문자 내용을 직접 반환
+  - `viewResolver`대신에 `HttpMessageConverter`가 동작 
+  - 기본 문자 처리 : `StringHrrpMessageConverter`
+  - 기본 객체 처리: `MappingJackson2HttpMessageConverter`
+    - `Json`이 아니라 `jackson`?? 
+      - 객체를 json으로 바꿔주는 라이브러리 
+      - 물론 google이 만든 라이브러리도 있지만 일단 기본디폴트 값을 사용
+  - byte 처리 등등 기타 여러 HttpMessageConverter가 기본으로 등록되어 있음 
+  - 참고 : 클라이언트의 HTTP Accept 해더와 서버의 컨트롤러 반환 타입 정보 둘을 조합해서 `HttpMessageConverter`가 선택된다. 
+
+![image-20210105153627352](README.assets/image-20210105153627352.png)
+
+
+
+## 3. 회원관리 예제 - 백엔드 개발
+
+> 드디어 회원관리 예제를 만들어 봅니다.
+>
+> 회원도메인과 회원도메인 객체를 저장하고 불러오는 회원 레퍼지토리를 만들기!
+
+### 3.1 & 3.2 비지니스 요구사항 정리
+
+- 데이터 : 회원ID, 이름 
+- 기능 : 회원등록, 조회
+- 아직 데이터 저장소가 선정되지 않음(가상의 시나리오)
+
+
+
+#### 일반적인 웹 애플리케이션 계층 구조 
+
+![image-20210105155816330](README.assets/image-20210105155816330.png)
+
+- 컨트롤러 : 웹 MVC의 컨트롤러 역할
+- 서비스 : 핵심 비지니스 로직구현 
+  - 같은 회원정보로 중복 가입이 안된다던지에 관한 로직이 들어감 
+- 리포지토리 : 데이터베이스에 접근, 도메인 객체를 DB에 저장하고 관리
+- 도메인 : 비지니스 도메인 객체
+  - 예 ) 회원, 주문, 쿠폰 등등 주로 데이터베이스에 저장하고 관리됨 
+
+
+
+#### 클래스 의존관계 
+
+![image-20210105155836531](README.assets/image-20210105155836531.png)
+
+- 아직 데이터 저장소가 선정되지 않아서, 우선 인터페이스로 구현 클래스를 변경 할 수 있도록 설계 
+  - 메모리 구현체로 만들어 일단 구현을 해내고 
+  - 향후에 이 부분을 바꿔 끼울것입니다
+    - 바꿔 끼울려면 인터페이스가 필요하기 떄문에 사용하는 것입니다. 
+- 데이터 저장소는 RDB, NoSQL 등등 다양한 저장소를 고민중인 상황으로 가정
+- 개발을 진행하기 위해서 개발 단계에서는 구현체로 가벼운 메모리 기반의 데이터 저장소 사용 
+
+ 
+
+### 3.3 회원 리포지토리 테스트 케이스 작성 
+
+개발한 기능을 실행해서 테스트 할 때 자바의 main메서드를 통해서 실행하거나, 웹 애플리케이션의 컨트롤러를 통해서 해당 기능을 실행한다. 
+
+이러한 방법은 준비하고 실행하는데 오래 걸리고, 반복 실행하기 어렵고 여러 테스트를 한번에 실행하기 어렵다는 단점이 있다. 
+
+자바는 JUnit이라는 프레임워크로 테스트를 실행해서 이러한 문제를 해결한다. 
 
